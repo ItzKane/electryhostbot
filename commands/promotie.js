@@ -1,14 +1,11 @@
 module.exports.run = async (client, message, cont) => {
-  const sconfig = require("../config.json");
-  const Discord = require('discord.js')
-  const webhooksend = require("quick.hook")
  var links = [
     "https://discord.gg/sGEQq5E (ElectryHost)",
     "https://discord.gg/VHYFuUD (Discord Bot Development)",
     "https://discord.gg/4GCPzen (Electry Development)",
     "https://discord.gg/9TgNWAD (BuildersUnited)"
 ];
-  let alertTekst = cont.join(" ");
+  const Discord = require('discord.js')
   message.delete(1);
   const member = message.member;
   const PromotieEmbed = new Discord.RichEmbed()
