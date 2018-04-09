@@ -6,7 +6,7 @@ module.exports.run = async (client, message, cont) => {
     "https://discord.gg/sGEQq5E (ElectryHost)",
     "https://discord.gg/VHYFuUD (Discord Bot Development)",
     "https://discord.gg/4GCPzen (Electry Development)",
-		"https://discord.gg/9TgNWAD (BuildersUnited)"
+    "https://discord.gg/9TgNWAD (BuildersUnited)"
 ];
   let alertTekst = cont.join(" ");
   message.delete(1);
