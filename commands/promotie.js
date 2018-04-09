@@ -1,6 +1,11 @@
 module.exports.run = async (client, message, cont) => {
   const Discord = require('discord.js')
-  let promotie = cont.join(" ");
+var links = [
+    "https://discord.gg/sGEQq5E (ElectryHost)",
+    "https://discord.gg/VHYFuUD (Discord Bot Development)",
+    "https://discord.gg/4GCPzen (Electry Development)",
+		"https://discord.gg/9TgNWAD (BuildersUnited)"
+];
   message.delete(1);
   const member = message.member;
   const PromotieEmbed = new Discord.RichEmbed()
