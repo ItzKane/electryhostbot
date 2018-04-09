@@ -1,18 +1,13 @@
 module.exports.run = async (client, message, cont) => {
- var links = [
-    "https://discord.gg/sGEQq5E (ElectryHost)",
-    "https://discord.gg/VHYFuUD (Discord Bot Development)",
-    "https://discord.gg/4GCPzen (Electry Development)",
-    "https://discord.gg/9TgNWAD (BuildersUnited)"
-];
   const Discord = require('discord.js')
+  let promotie = cont.join(" ");
   message.delete(1);
   const member = message.member;
   const PromotieEmbed = new Discord.RichEmbed()
   .setTitle(`Promotie`)
   .addField('Gebruiker:', `<@${message.author.id}>`)
   .addField('Doorgever:', `<@427857462947872779>`)
-  .addField('Server:', links[Math.floor(Math.random() * links.length)])
+  .addField('Server:', promotie)
   .setThumbnail(message.author.displayAvatarURL)
   .setFooter('Also promotion? Buy it on https://www.paypal.me/SmikkelHost')
   .setTimestamp()
