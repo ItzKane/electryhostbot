@@ -1,1 +1,1 @@
-# electryhostbot
+# Electrybot
